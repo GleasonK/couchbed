@@ -270,4 +270,9 @@ svg {
 		font-size: 5vw;
 	}
 
+	.down{
+		width: 30px;
+		height:15px;
+	}
+
 }
