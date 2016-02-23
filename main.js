@@ -14,8 +14,14 @@ myDataRef.on('child_added', function(snapshot) {
 	displayChatMessage(review);
 });
 
+$('#nameInput').keypress(function (e) { // Change focus on return
+	if (e.keyCode == 13) {
+		$('#messageInput:text:visible:last').focus();
+	}
+});
+
 $('#messageInput').keypress(function (e) {
-if (e.keyCode == 13) {
+	if (e.keyCode == 13) {
 		submit();
 	}
 });
