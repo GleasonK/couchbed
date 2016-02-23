@@ -6,7 +6,7 @@ body {
 }
 
 #main-page { 
-  background: url(img/couchbed.jpg) no-repeat center center fixed; 
+  background: url(img/couchbed.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -121,6 +121,7 @@ body {
 
 .review .rev-text {
 	font-weight: 400;
+	text-align: justify;
 }
 
 
