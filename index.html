@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>The BC CouchBed</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="content">
+		<div id="links" hidden="true">
+			<a href="https://www.airbnb.com/rooms/9093286">Airbnb</a> | <a href="https://thetab.com/us/bc/2016/02/15/someone-put-their-lower-dorm-on-airbnb-6127">BC Tab</a>
+		</div>
+		<div id="invite">Friday, 9PM Iggy A24</div>
+		<div id="motivation">see you there.</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.center = function () {
+	    this.css("position","absolute");
+	    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+	    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+	    return this;
+	}
+	$(document).ready(function(){
+		$('#links').fadeIn(1500, function(){
+			$('#invite').fadeIn(2000, function(){
+				$('#motivation').fadeIn(2000);
+			});
+		});
+	});
+	
+</script>
+</html>
