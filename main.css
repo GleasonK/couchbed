@@ -1,15 +1,22 @@
-html { 
+body {
+	font-family: 'Open Sans', 'Arimo';
+	font-weight: 600;
+	font-size: 5em;
+	margin: 0;
+}
+
+#main-page { 
   background: url(img/couchbed.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
-body {
-	font-family: 'Open Sans', 'Arimo';
-	font-weight: 600;
-	font-size: 5em;
+#experiences {
+	
 }
 
 #content {
@@ -30,10 +37,205 @@ body {
 	text-decoration: none;
 }
 
-#links, #invite, #motivation{
+#links, #invite, #motivation, #share {
 	display: none;
 }
 
 #invite, #motivation {
 	font-size: .6em;
+}
+
+#share {
+	color: white;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	font-size: .5em;
+}
+
+.down {
+	color: #222;
+	text-align: center;
+	font-size: .4em;
+	position: absolute;
+	bottom: 0px;
+	left:  0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	width: 50px;
+	height: 25px;
+	padding:5px;
+    border-radius: 50px 50px 0 0;
+    background: #eee;
+}
+
+#experiences {
+	color: #444;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background: #eee;
+	overflow: hidden;
+}
+
+#experiences p {
+	margin: 0;
+	font-size: 0.5em;
+}
+
+.section-content {
+	padding-top: 15px; 
+	width: 85%;
+	margin: 0 auto;
+	min-width: 800px;
+}
+
+#chat {
+	min-width: 600px;
+	max-width: 1000px;
+	height: 75vh;
+	margin: 15px auto;
+
+}
+
+#reviews {
+	font-size: 0.5em;
+	height: 60vh;
+	overflow: auto;
+	box-shadow: 0 4px 2px -2px gray; 
+}
+
+.review {
+	position: relative;
+	font-size: 0.5em;
+	margin: 15px;
+}
+
+.review .rev-name {
+}
+
+.review .rev-time {
+}
+
+.review .rev-text {
+	font-weight: 400;
+}
+
+
+
+
+#new-review {
+	font-size: 0.9rem;
+}
+
+hr.styled {
+    border: 0;
+    height: 1px;
+    width: 75%;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0));
+}
+
+.card {
+		background-color: white;
+		max-width: 960px;
+		width: 100%;
+		padding: 20px;
+		margin: auto;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+input{
+	background: #eee;
+}
+
+.footer {
+		color: #aaa;
+		opacity: 0.7;
+		max-width: 960px;
+		width: 100%;
+		padding: 10px;
+		margin: auto;
+}
+
+p {
+		font-weight: 300;
+}
+
+svg {
+		height: 50px;
+}
+
+.input-group {
+		position: relative;
+		padding-top: 20px;
+		margin-top: 10px;
+}
+
+.input-group:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+
+.input-group input {
+		border: none;
+		border-bottom: solid 1px #ccc;
+		width: 100%;
+		padding: 10px 0;
+		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+		font-size: 1em;
+}
+
+.input-group input:focus {
+		outline: none;
+		border-color: #20cfb8;
+		box-shadow: 0 1px 0 0 #20cfb8;
+}
+
+.input-group label {
+		position: absolute;
+		top: 30px;
+		left: 0;
+		color: #aaa;
+		font-weight: 300;
+		transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.input-group label:hover {
+		cursor: text;
+}
+
+.input-group input:focus + label {
+		color: #20cfb8;
+}
+
+.input-group input:focus + label,
+.input-group input.active + label {
+		transform: translateY(-30px);
+}
+
+.btn {
+		float: right;
+		color: #20cfb8;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		border-radius: 2px;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		transition: opacity 0.2s ease, background-color 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+		background-color: #fbfbfb;
+}
+
+.btn:active {
+		background-color: #f2f2f2;
 }

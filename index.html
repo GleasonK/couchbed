@@ -2,33 +2,41 @@
 <head>
 	<title>The BC CouchBed</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 </head>
 <body>
-	<div id="content">
-		<div id="links" hidden="true">
-			<a href="https://www.airbnb.com/rooms/9093286">Airbnb</a> | <a href="https://thetab.com/us/bc/2016/02/15/someone-put-their-lower-dorm-on-airbnb-6127">BC Tab</a>
+	<section id="main-page">
+		<div id="content">
+			<div id="links" hidden="true">
+				<a href="https://www.airbnb.com/rooms/9093286">Airbnb</a> | <a href="https://thetab.com/us/bc/2016/02/15/someone-put-their-lower-dorm-on-airbnb-6127">BC Tab</a>
+			</div>
+			<div id="invite">Friday, 9PM Iggy A24</div>
+			<div id="motivation">see you there.</div>
 		</div>
-		<div id="invite">Friday, 9PM Iggy A24</div>
-		<div id="motivation">see you there.</div>
-	</div>
+		<div id="share">What's your couchbed story?</div>
+		<div class="down"><i class="fa fa-angle-down"></i></div>
+	</section>
+	<section id="experiences">
+		<div class="section-content">
+			<p class="header"><i>Share your couchbed experience...</i></p>
+			<hr class="styled">
+			<div id="reviews">
+			</div>
+			<div id="new-review">
+				<div class="input-group">
+					<input type="text" id='nameInput' class="m-input">
+					<label for="first">Name:</label>
+				</div>
+				<div class="input-group">
+					<input type="text" id='messageInput' class="m-input">
+					<label for="first">Your Experience:</label>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript">
-	jQuery.fn.center = function () {
-	    this.css("position","absolute");
-	    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
-	    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
-	    return this;
-	}
-	$(document).ready(function(){
-		$('#links').fadeIn(1500, function(){
-			$('#invite').fadeIn(2000, function(){
-				$('#motivation').fadeIn(2000);
-			});
-		});
-	});
-	
-</script>
+<script src="main.js"></script>
 </html>
