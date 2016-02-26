@@ -51,7 +51,7 @@ function displayChatMessage(review) {
 	rev.appendChild(revInfo);
 	rev.appendChild(revText);
 	$('#reviews').prepend(rev);
-	$('#reviews').animate({ scrollTop: 0 }, 'slow');
+	$('#reviews').scrollTop(0);
 };
 
 function leaveInput(el) {
